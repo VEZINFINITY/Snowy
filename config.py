@@ -7,30 +7,30 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "12565317"))
+API_HASH = getenv("API_HASH", "de3e1a800e0ebdff1031232be6c38814")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7597057529:AAGwyMbRaXPxtnZtMDcv1n8Emae4dmoiYfQ")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_KUZE_lll")
 # --------------------------------------------------------
 BOT_USERNAME = getenv("BOT_USERNAME","SNOWY_x_musicbot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME")
+BOT_NAME = getenv("BOT_NAME", "snowy x music")
 # ---------------------------------------------------------
 
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://knight4563:knight4563@cluster0.a5br0se.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", -1002267586320))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002825379503))
 
 # Get this value from @PURVI_HELP_BOT on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 6051510669))
+OWNER_ID = int(getenv("OWNER_ID", 7926944005))
 
 
 ## Fill these variables if you're deploying on heroku.
@@ -48,8 +48,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/who_cares_qt")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Destiny_Infinity_Og")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/dark_x_knight_musiczz_support")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/dark_knight_support")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -71,7 +71,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC_u0UANv5SpgxrjB49Jly8owhGFeIKeWLqnLMAkb2rpsk38cFiByuADys3nfwYE5IMBOj-q1k5yE_wAHafIZDuR2hsLs9g5IxVxVgn7lzb-nIBYan95jbZxq49auQhwGnzqRNvToIL7Ioxy_Abf78ZEhryFb6bK2fnlgB6rXjyZ703lG3e-2CKlHDfkOXlc9-v_iI5JJbUe-GHErhZkQYwnA7gJMlbF2xIVsfYvfWrO9m5LepfbohaFF6Lsz0Ms4rK2k0uIqappdm07jroAuIQw3EJUM8VXnowTtf5st5ZjrH0eaPAa3k1UWYiJRZRrqM7x4Rq34yg0BH4KxLz3Cfk1ux-pAAAAAHlOtF5AA" None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -87,21 +87,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/1951b91d265c94bb90d2f-70bea2d338ca641e75.jpg"
+    "START_IMG_URL", "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/9cevdg.jpg "
+    "PING_IMG_URL", "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg "
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/i493lf.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/i0qmgf.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/8e3552aa743ffdb6f18c9.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/8e3552aa743ffdb6f18c9.jpg"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://te.legra.ph/file/6298d377ad3eb46711644.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+STATS_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+STREAM_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/6165bc89f53da9846f83b-61cca9647e63e5f7da.jpg"
 
 
 def time_to_seconds(time):
