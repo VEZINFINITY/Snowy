@@ -11,7 +11,7 @@ API_ID = int(getenv("API_ID", "12565317"))
 API_HASH = getenv("API_HASH", "de3e1a800e0ebdff1031232be6c38814")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "7597057529:AAGwyMbRaXPxtnZtMDcv1n8Emae4dmoiYfQ")
+BOT_TOKEN = getenv("BOT_TOKEN", "7597057529:AAG4TvzqXvlT3hSxddwXatGGvdmkyBcdlm0")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ll_KUZE_lll")
 # --------------------------------------------------------
